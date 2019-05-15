@@ -1,0 +1,36 @@
+.user-list-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.user-list {
+  list-style-type: none;
+  margin: 0 0 2em 0;
+
+  & li {
+    height: 3.6em;
+    background: lightgray;
+    height:100%;
+    margin: 10px auto;
+    border-radius: 0 4px 4px 0;
+    & .avatar {
+      display: inline-block;
+      background: darkgray;
+      height: 4em;
+      border-radius: 4px 0 0 4px;
+      & img {
+        border-radius: 50%;
+        height: 3.5em;
+      }
+    }
+    & .user-info {
+      position: relative;
+      top: -20px;
+      padding: 0 0 0 10px;
+      margin: 0 10px;
+    }
+
+  }
+}

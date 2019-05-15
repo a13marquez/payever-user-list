@@ -1,0 +1,11 @@
+a {
+  text-decoration: none;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  background: white;
+  margin: 5px 2px 0 2px;
+  padding: .3em;
+  &.active {
+    background: grey;
+    color:white;
+  }
+}

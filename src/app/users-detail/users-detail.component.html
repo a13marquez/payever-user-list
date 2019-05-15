@@ -1,0 +1,20 @@
+<div *ngIf="user" class="user-card-container">
+  <div class="user-card">
+
+    <h2 class="user-card-header">
+
+      <b>{{user.first_name | uppercase }} {{user.last_name | uppercase}}</b>:
+    </h2>
+    <div class="user-card-details">
+      <span class="user-card-img">
+        <img src="{{user.avatar}}" alt="User avatar">
+      </span>
+      <span class="user-card-info">
+        <span><b>First Name</b>: </span>{{user.first_name}}
+        <span><b>Last Name</b>: </span>{{user.last_name}}
+        <span><b>Email</b>: </span>{{user.email}}
+      </span>
+    </div>
+    <a (click)=backToUsersList()> Back to users list</a>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<a
+*ngFor="let page of pagesNumber"
+[routerLink]="['/users', page]"
+routerLinkActive="active"
+>{{page}}</a>

@@ -1,0 +1,17 @@
+<div class="user-list-container">
+  <ul class="user-list">
+    <li
+      *ngFor="let user of userList"
+      routerLink="{{user.id}}">
+      <div>
+        <span class="avatar">
+          <img src="{{user.avatar}}" alt="User avatar">
+        </span>
+        <span class="user-info">
+          {{user.first_name}} {{user.last_name}}
+        </span>
+      </div>
+    </li>
+  </ul>
+
+</div>
